@@ -86,7 +86,7 @@ The `nm` util allows us to see the list of symbols from the given object file. I
 * `main` - the main function;
 * `printf` - the function from the [glibc](https://en.wikipedia.org/wiki/GNU_C_Library) library. `main.c` does not know anything about it for now either.
 
-What can we understand from the output of `nm` so far? The `main.o` object file contains the local symbol `main` at address `0000000000000000` (it will be filled with correct address after is is linked), and two unresolved symbols. We can see all of this information in the disassembly output of the `main.o` object file:
+What can we understand from the output of `nm` so far? The `main.o` object file contains the local symbol `main` at address `0000000000000000` (it will be filled with the correct address after it is linked), and two unresolved symbols. We can see all of this information in the disassembly output of the `main.o` object file:
 
 ```
 $ objdump -S main.o
