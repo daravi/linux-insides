@@ -111,7 +111,7 @@ Disassembly of section .text:
   30:	c3                   	retq   
 ```
 
-Here we are interested only in the two `callq` operations. The two `callq` operations contain `linker stubs`, or the function name and offset from it to the next instruction. These stubs will be updated to the real addresses of the functions. We can see these functions' names with in the following `objdump` output:
+Here we are interested only in the two `callq` operations. The two `callq` operations contain `linker stubs`, or the function name and offset from it to the next instruction. These stubs will be updated to the real addresses of the functions. We can see these functions' names within the following `objdump` output:
 
 ```
 $ objdump -S -r main.o
